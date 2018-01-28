@@ -1,0 +1,52 @@
+
+
+data type:
+
+number
+string
+boolean
+array
+object
+null
+
+
+json syntax:
+
+uses key/ values-{"names":"brad"}
+uses double around key and values
+.json save as
+MIME type is "Application/json"
+
+
+{"employee":[ {"name":"vimal","email",},
+ {"name":santhosh","rahusl@email.com"}, ]}
+
+xml example: 
+<employees>
+<employee> 
+<name>santohsh</name> 
+<email>sandssanthosh101</email> 
+</employee> </employees>
+
+{ 
+"name":"brad",
+"age":35,
+"address":{
+ "street":"5 main st",
+ "city" : "Boston"
+},
+  "children: ["briana","nicholas"]
+}
+
+
+-->npm install -g live-server
+-->live-server
+
+
+var response= JSON.parse(xhttp.responseText);
+var people=response.people;
+var outpu="";
+for(var i=0;i<people.length;i++)
+{
+output += '<li>' + people[i].name+ '</li>';
+}
