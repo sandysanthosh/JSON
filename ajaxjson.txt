@@ -1,0 +1,53 @@
+store data:
+
+
+<html>
+<head>
+    <title>JSON</title></head>
+    <script>
+
+var obj = {
+
+   people: [
+    { 
+    	name: "ALEX",
+ 	    online : true
+	},
+	{ 
+	name:"billy",
+	online: false,
+	}
+       ]
+   };
+  var str = JSON.stringify(obj);
+   console.log(str);
+</script>
+</html>
+
+retrieve data:
+
+json parsing:
+
+JSON.parse
+JSON.stringfy
+
+code AJAX:
+
+<script>
+var xmlhttp = new XMLHttpRequest(),json;
+
+xmlhttp.onreadystatechange = function(){
+if(xmlhttp.readystate == 4 && xmlhttp.status == 200){
+console.log("working");
+  json = JSON.parse(xmlhttp.responseText);
+  console.log(json);
+}
+};
+
+xmlhttp.open('GET','people.json',true);
+xmlhttp.send();
+
+
+json java:
+
+generator api:
